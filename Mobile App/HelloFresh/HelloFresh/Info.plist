@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>duckduckgo.com</key>
+			<dict/>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SourceSansPro-Regular.otf</string>
+		<string>SourceSansPro-Bold.otf</string>
+		<string>SourceSansPro-Black.otf</string>
+		<string>SourceSansPro-Light.otf</string>
+	</array>
+</dict>
+</plist>
