@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recommendations</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f4f4f4; /* Light gray background color */
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50; /* Apple green text color */
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .recipe-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .recipe-card {
+            width: 300px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #ffffff; /* White background color */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333; /* Dark gray text color */
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 200px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Food Recommendations</h1>
+
+    <div class="recipe-container">
+        {% for recipe in recipes %}
+            <div class="recipe-card">
+                <h2>{{ recipe.recipeName }}</h2>
+                <img src="{{ recipe.image_url }}" alt="{{ recipe.recipeName }} image">
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
