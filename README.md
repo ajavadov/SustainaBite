@@ -3,8 +3,6 @@ Revolutionizing the culinary experience
 
 # Culinary Companion
 
-![Culinary Companion Logo](link_to_logo_image)
-
 ## Inspiration
 
 Our commitment to enhancing meal decisions and reducing food waste fuels our inspiration. Driven by a passion for sustainability, we embarked on a mission to transform the culinary experience.
